@@ -12,7 +12,7 @@ class Ltime
         {
             sb=new StringBuilder();
             f=new File("login_info.txt");
-            fw=new FileWriter(f);
+            fw=new FileWriter(f,true);
             PrintWriter pw=new PrintWriter(fw);
             p = Runtime.getRuntime().exec("quser");
             p.waitFor();
